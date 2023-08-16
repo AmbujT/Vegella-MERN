@@ -88,7 +88,7 @@ const OrderSuccessful = ({ orderid, message, redirecto }) => {
 
                     <div>
                         <p>Order Subtotal</p>
-                        <p>$ {orderdata.SubTotal}</p>
+                        <p>₹ {orderdata.SubTotal}</p>
                     </div>
 
                     <div>
@@ -104,17 +104,17 @@ const OrderSuccessful = ({ orderid, message, redirecto }) => {
 
                     <div>
                         <p>Shipping Charges</p>
-                        <p>$ {orderdata.ShippingCharges}</p>
+                        <p>₹ {orderdata.ShippingCharges}</p>
                     </div>
 
                     <div>
                         <p>Tax</p>
-                        <p>$ {orderdata.Tax}</p>
+                        <p>₹ {orderdata.Tax}</p>
                     </div>
 
                     <div>
                         <p>Total</p>
-                        <p>$ {orderdata.Total}</p>
+                        <p>₹ {orderdata.Total}</p>
                     </div>
 
                 </div>
@@ -154,22 +154,22 @@ const OrderSuccessful = ({ orderid, message, redirecto }) => {
                 <div className='totalcont'>
                     <div>
                         <p>Subtotal</p>
-                        <p>$ {orderdata.SubTotal}</p>
+                        <p>₹ {orderdata.SubTotal}</p>
                     </div>
 
                     <div>
                         <p>Shipping</p>
-                        <p>$ {orderdata.ShippingCharges}</p>
+                        <p>₹ {orderdata.ShippingCharges}</p>
                     </div>
 
                     <div>
                         <p>Tax</p>
-                        <p>$ {orderdata.Tax}</p>
+                        <p>₹ {orderdata.Tax}</p>
                     </div>
 
                     <div>
                         <p>Total</p>
-                        <p>$ {orderdata.Total}</p>
+                        <p>₹ {orderdata.Total}</p>
                     </div>
                 </div>
             </div>
