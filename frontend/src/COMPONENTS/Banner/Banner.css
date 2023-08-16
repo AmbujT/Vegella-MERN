@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap');
+
+:root{
+  --primary-color: #3bb77e;
+  --secondary :#1d4c4f;
+  --bg: #e2f9ee;
+  --black: #1c2137;
+  --white: #fff;
+  --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: .2s linear;
+
+} 
+.banner-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 0.5fr));
+    gap: 1.2rem;
+    padding-top: 5rem;
+    margin-bottom: 5rem;
+  }
+  
+  .banner-container .banner{
+    position: relative;
+    height: 15rem;
+    width: 25rem;
+    overflow: hidden;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+  }
+  .banner-container: hover{
+    transform: translateY(-5px);
+  
+  }
+  
+  .banner-container .banner img{
+    height: 100%;
+    width: 125%;
+    object-fit: cover;
+  }
+  
+  .banner-container .banner img:hover{
+    transform: scale(1.2);
+  }
+  
+  .banner-container .banner .content {
+    position: absolute;
+    top: 40%; left: 2rem;
+    transform: translateY(-50%);
+  }
+  
+  .banner-container .banner .content span{
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  .banner-container .banner .content h3{
+    font-size: 2rem;
+    padding-top: .5rem;
+    color: var(--black);
+  }
+  
+  .banner-container .banner .content .btn{
+    padding: .8rem 2.5rem;
+  }
+  
+  /* end */
+  .heading{
+    text-align: center;
+    padding: 1.2rem 0;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 2rem;
+    
+  }
+  
+  .heading span{
+    color: var(--secondary);
+    text-transform: uppercase;
+  }
+  
+  .btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3.1rem;
+    font-size: 1.2rem;
+    color: var(--white);
+    border-radius: .5rem;
+    background: var(--primary-color);
+    cursor: pointer;
+  }
