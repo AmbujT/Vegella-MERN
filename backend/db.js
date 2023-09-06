@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
-const mongoURL = 'mongodb+srv://moneyibm7:money4ibm@cluster0.cgihkiq.mongodb.net/Vegella?retryWrites=true&w=majority'; // Your connection string
+require('dotenv').config(); // Load environment variables from .env file
+
+const mongoURL = process.env.MONGODB_URI; // Your connection string
 
 const mongoDB = async () => {
     try {
