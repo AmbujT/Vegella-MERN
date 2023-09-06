@@ -2,9 +2,14 @@ import React, { useEffect, useState } from 'react'
 import './Navbar.css'
 import logo from '../../ASSETS/logo.png'
 import Dropdown from 'react-bootstrap/Dropdown'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 const Navbar = ({ reloadnavbar }) => {
     const [cartquantity, setcartquantity] = useState(0)
+    const navigate = useNavigate();
+    const handleLogout =() =>{
+        localStorage.removeItem("authToken");
+        navigate("/login");
+    }
 
 
     const getcarttotalitems = () => {
@@ -64,11 +69,20 @@ const Navbar = ({ reloadnavbar }) => {
                         </Dropdown.Toggle>
 
                         <Dropdown.Menu>
+                        
+                        {!localStorage.getItem("authToken") ? (
+                        <>
                             <Dropdown.Item href="/login">Login</Dropdown.Item>
                             <Dropdown.Item href="/signup">Signup</Dropdown.Item>
+                        </>
+                 ) : (
+                        <>
                             <Dropdown.Item href="/user/accountsettings">Profile</Dropdown.Item>
-                            <Dropdown.Item href="#">Logout</Dropdown.Item>
+                            <Dropdown.Item href="#" onClick={handleLogout}>Logout</Dropdown.Item>
+                        </>
+                    )}
                         </Dropdown.Menu>
+
                     </Dropdown>
                 </div>
             </div>

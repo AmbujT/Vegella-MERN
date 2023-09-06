@@ -92,7 +92,7 @@ const Contact = () => {
 
                 <div>
                     <h1>Our Story</h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p>Welcome to Vegella, your direct link to farm-fresh goodness. Our story is one of connecting diligent farmers with discerning consumers, ensuring you access the finest produce while supporting local communities. Stay ahead with real-time market insights and price predictions, making informed choices effortlessly. Say goodbye to market chaos - we bring the mandi to your door, guaranteeing freshness, quality, and affordability. Embracing sustainability, we're your partners in cultivating a greener future. Join us in savoring not just vegetables and fruits, but a healthier lifestyle. Vegella - where farm meets fork for a happier you and a happier planet.</p>
 
                 </div>
             </div>
@@ -101,7 +101,9 @@ const Contact = () => {
 
                 <div>
                     <h1>Who are we</h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p>At Vegella, we're committed to not only nourishing your body but also nurturing our planet. We prioritize sustainable practices that minimize our environmental footprint. By supporting us, you're contributing to a greener tomorrow, where responsible farming and conscious consumption go hand in hand.
+
+Join us in this journey of freshness, affordability, and sustainability. Experience the joy of savoring farm-fresh vegetables and fruits that not only tantalize your taste buds but also contribute to the well-being of our farmers and the planet. Vegella – where every bite is a step towards a healthier you and a happier world.</p>
 
                 </div>
             </div>

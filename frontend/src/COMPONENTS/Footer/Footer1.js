@@ -11,7 +11,7 @@ const Footer1 = () => {
                 <h1>Fresh Vegetables & Fruits at your doorstep
                 </h1>
                 <p>We deliver fresh vegetables & fruits at your doorstep.
-                    We deliver fresh vegetables & fruits at your doorstep.
+                    Check Out Real Market Insights And Price Predictions.
                 </p>
             </div>
         </div>

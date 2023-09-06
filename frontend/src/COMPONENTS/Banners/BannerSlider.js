@@ -10,7 +10,7 @@ const BannerSlider = () => {
             image: bg,
             title: 'Vegella:Your Own Mandi',
             description: 'Hey, Veggie Lover!',
-            descriptionbr: 'We are here to help you out with some time saving as well as some money savings.<br>Check out nearby Market logs, of fresh vegetables.',
+            descriptionbr: 'We are here to help you out with some time saving as well as some money savings. Check out nearby Market logs, of fresh vegetables.',
 
             button: 'htttps://www.google.com'
         },

@@ -1,9 +1,42 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, {useState} from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import Navbar from '../../COMPONENTS/Navbar/Navbar'
 import './AuthPage.css'
 const Login = () => {
+    const [formData, setFormData] = useState({
+        email: '',
+        password: '',
+      });
+    let navigate = useNavigate();
+      const handleChange = (e) => {
+        setFormData({...formData, [e.target.name]: e.target.value})
+      };
+    
+      const handleSubmit = async (e) => {
+        e.preventDefault();
+        
+        try {
+          const response = await fetch("http://localhost:5000/api/loginuser",{
+            method:'POST',
+            headers:{
+                'Content-Type':'application/json'
+            },
+            body:JSON.stringify({email: formData.email, password: formData.password})
+          });
+          const json =await response.json()
+          console.log(json);
+          if (json.success) {
+            localStorage.setItem("userEmail", formData.email);
+            localStorage.setItem("authToken", json.authToken);
+            console.log(localStorage.getItem("authToken"))
+            navigate('/');
+          }
+        } catch (error) {
+          console.error('Error registering user:', error);
+        }
+      };
     return (
+        
         <div className='authpage'>
             <Navbar reloadnavbar={false}/>
 
@@ -15,12 +48,12 @@ const Login = () => {
                     <h1>Login</h1>
                     <div className='formgroup'>
                         <label htmlFor='email'>Email</label>
-                        <input type='email' id='email' />
+                        <input type='email' id='email' name ='email' onChange={handleChange} value={formData.email} />
                     </div>
 
                     <div className='formgroup'>
                         <label htmlFor='password'>Password</label>
-                        <input type='password' id='password' />
+                        <input type='password' id='password' name ='password' onChange={handleChange} value={formData.password}/>
                     </div>
 
                     <Link to='/forgotpassword'
@@ -30,7 +63,7 @@ const Login = () => {
                     </Link>
                     <Link to='/'
                         className='stylenone'
-
+                        onClick={handleSubmit}
                     >
                         <button className='btn'>Login</button>
                     </Link>

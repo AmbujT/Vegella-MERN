@@ -10,17 +10,17 @@ const CategorySidebar = () => {
         {
             id: 1,
             categoryimage: img2,
-            categoryname: 'Category 1'
+            categoryname: 'Vegetable'
         },
         {
             id: 2,
             categoryimage: img3,
-            categoryname: 'Category 2'
+            categoryname: 'Fruits'
         },
         {
             id: 3,
             categoryimage: img4,
-            categoryname: 'Category 3'
+            categoryname: 'Rare/Others'
         }
     ]
     return (
