@@ -101,8 +101,8 @@ const Navbar = ({ reloadnavbar }) => {
                         <Dropdown.Item href="#/action-3">Other Groceries</Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
-                <Link to='/about'>
-                    <a>About Us</a>
+                <Link to='/vegetable-price-prediction'>
+                    <a>Price Prediction</a>
                 </Link>
                 <Link to='/contact'>
                     <a>Contact Us</a>

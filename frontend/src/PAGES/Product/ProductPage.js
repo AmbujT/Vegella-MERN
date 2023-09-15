@@ -635,8 +635,8 @@ const ProductPage = () => {
                     <h1 className='head1'>{productdata.ProductName}</h1>
                     <div className='c121'>
                         <p className='price'>
-                            ${productdata.SalesPrice * count}
-                            <span>${productdata.ProductPrice * count}</span>
+                            ₹{productdata.SalesPrice * count}
+                            <span>₹{productdata.ProductPrice * count}</span>
                         </p>
 
                         <div className='incrdecr'>

@@ -14,6 +14,7 @@ import Cart from './PAGES/Cart/Cart';
 import UserProfile from './PAGES/User/UserProfile';
 import FAQ from './PAGES/Extra/FAQ';
 import Termsandconditions from './PAGES/Extra/Termsandconditions';
+import VegetablePricePrediction from './COMPONENTS/VegetablePricePrediction';
 import PrivacyPolicy from './PAGES/Extra/PrivacyPolicy';
 const App = () => {
   return (
@@ -36,7 +37,7 @@ const App = () => {
         <Route path="/FAQ" element={<FAQ/>} />
         <Route path="/termsandconditions" element={<Termsandconditions/>} />
         <Route path="/privacypolicy" element={<PrivacyPolicy/>} />
-
+        <Route path="/vegetable-price-prediction" element={<VegetablePricePrediction/>} />
         <Route path="*" element={<div>
           <h1>404 NOT FOUND</h1>
         </div>} />

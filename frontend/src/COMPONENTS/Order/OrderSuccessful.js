@@ -140,9 +140,9 @@ const OrderSuccessful = ({ orderid, message, redirecto }) => {
                                                 <p>{index + 1}</p>
                                             </td>
                                             <td><p>{item.ProductName}</p></td>
-                                            <td><p>${item.Price}</p></td>
+                                            <td><p>₹{item.Price}</p></td>
                                             <td><p>{item.Quantity}</p></td>
-                                            <td><p>${item.Price * item.Quantity}</p></td>
+                                            <td><p>₹{item.Price * item.Quantity}</p></td>
                                         </tr>
                                     )
                                 })

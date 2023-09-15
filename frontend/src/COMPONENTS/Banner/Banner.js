@@ -13,7 +13,7 @@ const Banner = () => {
         <div className="content">
           <span>best prices</span>
           <h3>Vegetables</h3>
-          <a href="#" className="btn">
+          <a href="#" className="btn" style={{ backgroundColor: '#28B67E' }}>
             shop now
           </a>
         </div>

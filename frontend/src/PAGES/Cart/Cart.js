@@ -314,12 +314,12 @@
                                 data-label="Price"
                               >
                                 <p>
-                                  $ {item.productdata.SalesPrice ? item.productdata.SalesPrice.toFixed(2) : 0.00}
+                                  ₹ {item.productdata.SalesPrice ? item.productdata.SalesPrice.toFixed(2) : 0.00}
                                 </p>
                               </td>
   
                               <td>
-                                <p>$ {
+                                <p>₹ {
                                   (item.productdata.SalesPrice * item.quantity).toFixed(2)
                                 }</p>
                               </td>
@@ -348,7 +348,7 @@
                         <td></td>
                         <td className='totaltableleft'>Sub-Total</td>
                         <td className='totaltableright'>
-                          $ {subtotal.toFixed(2)}
+                          ₹ {subtotal.toFixed(2)}
                         </td>
                       </tr>
                       <tr>
@@ -356,7 +356,7 @@
                         <td></td>
                         <td className='totaltableleft'>Shipping</td>
                         <td className='totaltableright'>
-                          $ {shipping.toFixed(2)}
+                          ₹ {shipping.toFixed(2)}
                         </td>
                       </tr>
                       <tr>
@@ -364,7 +364,7 @@
                         <td></td>
                         <td className='totaltableleft'>Total</td>
                         <td className='totaltableright'>
-                          $ {(subtotal + shipping).toFixed(2)}
+                          ₹ {(subtotal + shipping).toFixed(2)}
                         </td>
                       </tr>
                       <tr>
@@ -372,7 +372,7 @@
                         <td></td>
                         <td className='totaltableleft'>Tax</td>
                         <td className='totaltableright'>
-                          $ {tax.toFixed(2)}
+                          ₹ {tax.toFixed(2)}
                         </td>
                       </tr>
                       <tr>
@@ -380,7 +380,7 @@
                         <td></td>
                         <td className='totaltableleft'>Net-Total</td>
                         <td className='totaltableright'>
-                          $ {(tax + subtotal + shipping).toFixed(2)}
+                          ₹ {(tax + subtotal + shipping).toFixed(2)}
                         </td>
                       </tr>
                     </tbody>
@@ -479,7 +479,7 @@
               <div className='c2'>
                 <span>Net Total</span>
                 &nbsp;&nbsp;
-                <span>$ {(subtotal + tax + shipping).toFixed(2)}</span>
+                <span>₹ {(subtotal + tax + shipping).toFixed(2)}</span>
               </div>
             </div>
           }

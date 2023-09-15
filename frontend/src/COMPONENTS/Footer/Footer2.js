@@ -17,6 +17,7 @@ const Footer2 = () => {
           <Link to='/about' className='stylenone'>
             <p>About us</p>
           </Link>
+          <Link to="/vegetable-price-prediction" className='stylenone'><p>Vegetable Price Prediction</p></Link>
           <Link to='/contact' className='stylenone'>
             <p>Contact us</p>
           </Link>
@@ -40,7 +41,10 @@ const Footer2 = () => {
           <h3>Others</h3>
           <p>Home</p>
           <p>Mandi</p>
+          <Link to='/vegetable-price-prediction' className='stylenone'>
+
           <p>Price Prediction</p>
+          </Link>
         </div>
         <div className='f2'>
           <h3>Subscribe Now</h3>
