@@ -84,6 +84,15 @@ function VegetablePricePrediction() {
 }
 const Wrapper=styled.div`
 
+background-image: url(${backgroundImage});
+background-size: cover;
+padding: 20px;
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+
 .predict-container {
    text-align:center;
     max-width: 50%;
@@ -92,9 +101,7 @@ const Wrapper=styled.div`
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow:-5px 7px 4px rgb(0 0 0 / 10%);
-    background-color: #fff;
-      background-image: url(${backgroundImage});
-      background-size: cover;
+    background-color: rgb(147, 250, 165, 0.5);
      
   }
 
@@ -102,7 +109,7 @@ const Wrapper=styled.div`
     font-family: 'Courgette',cursive;
     font-size:3rem;
     font-weight:800;
-    color:#2a5a14bd;
+    color:#06373a;
     padding-bottom:1.3rem;
   }
   .form-group {
@@ -145,5 +152,72 @@ const Wrapper=styled.div`
     margin-top: 10px;
     font-weight: bold;
   }
-`
+`;
+export const GlobalStyles = styled.div`
+  body, html {
+    margin: 0;
+    padding: 0;
+    background-image: url(${backgroundImage});
+    background-size: cover;
+    background-attachment: fixed;
+  }
+`;
+// const Wrapper = styled.div`
+//   background-image: url(${backgroundImage});
+//   background-size: cover;
+//   padding: 20px;
+//   font-family: Arial, sans-serif;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   min-height: 100vh;
+
+//   .predict-container {
+//     background-color: rgba(255, 255, 255, 0.9);
+//     padding: 20px;
+//     border-radius: 8px;
+//     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+//     width: 400px;
+//     text-align: center;
+
+//     h2 {
+//       font-size: 24px;
+//       margin-bottom: 20px;
+//     }
+
+//     .form-group {
+//       margin-bottom: 20px;
+
+//       label {
+//         font-weight: bold;
+//         display: block;
+//         margin-bottom: 8px;
+//       }
+
+//       select,
+//       input {
+//         width: 100%;
+//         padding: 10px;
+//         border: 1px solid #ccc;
+//         border-radius: 4px;
+//         font-size: 16px;
+//       }
+//     }
+
+//     button {
+//       background-color: #007bff;
+//       color: white;
+//       border: none;
+//       padding: 10px 20px;
+//       border-radius: 4px;
+//       cursor: pointer;
+//       font-size: 16px;
+//     }
+
+//     .predicted-price {
+//       font-size: 18px;
+//       margin-top: 20px;
+//     }
+//   }
+// `;
 export default VegetablePricePrediction;
